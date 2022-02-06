@@ -13,6 +13,10 @@ var twoSum = function(nums, target) {
     }
     
     */
+    
+    
+    // optimised approach
+    
     let map =new Map();
     for(let i=0;i<nums.length;i++)
       {  let num1=nums[i];
