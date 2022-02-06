@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Using Map.forEach():</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map 
+const fruits = new Map();
+
+// Set Map Values //-> set is used to set values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+fruits.set(1,600);  // keys can be of any datatype
+...............
+..............
+//2nd way
+
+const fruits= new Map([
+["apples",200],
+["kiwi",500],
+["chikoo",1000]
+]);
+............
+
+document.getElementById("demo").innerHTML = fruits.get("apples");
+if(fruits.has("bananas"))     // has returns true if key exists
+{
+document.getElementById("demo1").innerHTML = `i am ${fruits.get("oranges")}`;    // get the value for key
+}
+else
+fruits.delete("oranges");   //removes key/element
+
+document.getElementById("demo2").innerHTML=fruits.has("oranges");
+</script>
+</body>
+</html>
