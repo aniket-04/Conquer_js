@@ -57,5 +57,5 @@ The JavaScript engine then assigns 20 to y and logs 30 to the console.
 When the function returns, the JavaScript engine pops the execution context off the call stack and continues with the execution of the previous execution context.
 
 In summary, the compilation phase and the execution phase are two distinct phases in the JavaScript runtime. 
-During the compilation phase, the JavaScript engine parses the code and creates a global execution context. 
-During the execution phase, the JavaScript engine executes the code line by line, creates new execution contexts for functions, and manages the call stack.
+During the `Compilation phase`, the JavaScript engine `parses the code` and creates a `global execution context`.
+During the `Execution phase`, the JavaScript engine `executes the code` line by line, creates `new execution contexts` for functions, and manages the `call stack`.
