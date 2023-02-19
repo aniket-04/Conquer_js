@@ -35,7 +35,7 @@ When the function returns, the JavaScript engine pops the execution context off 
 
 For example, consider the following code:
 
-``
+```
 var x = 10;
 
 function foo() {
@@ -44,7 +44,7 @@ function foo() {
 }
 
 foo();
-``
+```
 
 During the compilation phase, the JavaScript engine creates a variable x in the variable environment and assigns it a value of undefined. 
 It also creates a function foo in the variable environment.
