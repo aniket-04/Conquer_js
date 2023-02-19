@@ -59,3 +59,22 @@ When the function returns, the JavaScript engine pops the execution context off 
 In summary, the compilation phase and the execution phase are two distinct phases in the JavaScript runtime. 
 During the `Compilation phase`, the JavaScript engine `parses the code` and creates a `global execution context`.
 During the `Execution phase`, the JavaScript engine `executes the code` line by line, creates `new execution contexts` for functions, and manages the `call stack`.
+
+
+## 2. Execution Context
+
+An execution context is a container that holds variables and functions as they're executed. 
+There are three types of execution context in JavaScript: global, function, and eval. 
+Each execution context has a `scope chain` and a `this` value.
+
+It consists of two parts: the `lexical environment` and the `variable environment`.
+
+The lexical environment is a specification term that refers to the environment in which the code is written. It includes all the variables and functions that are in scope at the point where the code is written, and it is determined by the lexical structure of the code.
+
+The variable environment, on the other hand, is a specification term that refers to the environment in which the code is executed. It includes all the variables and functions that are in scope at the point where the code is executed, and it can be modified during the execution of the code.
+
+When a piece of code is executed, it is executed within a specific execution context. The execution context provides a way for the JavaScript engine to keep track of the state of the code and to determine how the code should be executed. Each execution context has its own set of variables and functions that are in scope at the point where the code is executed.
+
+JavaScript uses a stack to manage execution contexts. When a function is called, a new execution context is created and pushed onto the top of the stack. When the function returns, the execution context is popped off the stack, and the control is returned to the calling function.
+
+In summary, an execution context is an abstract concept that describes the environment in which the code is executed. It includes the lexical environment and the variable environment, and it is managed using a stack. Understanding execution contexts is important for understanding how JavaScript code is executed and how variables and functions are scoped in JavaScript.
