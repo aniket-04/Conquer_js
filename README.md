@@ -2,7 +2,7 @@
 
 ## 1. Hoisting
 
-In JavaScript, code is executed in two phases: the compilation phase and the execution phase.
+In JavaScript, code is executed in two phases: the `Compilation phase` and the `Execution phase`.
 
 During the compilation phase, the JavaScript engine parses the code and creates a global execution context, which consists of the global object (`window` in a browser, or `global` in Node.js) and a variable environment. 
 
