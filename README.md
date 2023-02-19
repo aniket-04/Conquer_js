@@ -56,7 +56,7 @@ The new execution context has its own variable environment and a reference to th
 The JavaScript engine then assigns 20 to y and logs 30 to the console. 
 When the function returns, the JavaScript engine pops the execution context off the call stack and continues with the execution of the previous execution context.
 
-In summary, the compilation phase and the execution phase are two distinct phases in the JavaScript runtime. 
+In summary, the compilation phase and the execution phase are `2` distinct phases in the JavaScript runtime. 
 During the `Compilation phase`, the JavaScript engine `parses the code` and creates a `global execution context`.
 During the `Execution phase`, the JavaScript engine `executes the code` line by line, creates `new execution contexts` for functions, and manages the `call stack`.
 
@@ -64,10 +64,10 @@ During the `Execution phase`, the JavaScript engine `executes the code` line by 
 ## 2. Execution Context
 
 An execution context is a container that holds variables and functions as they're executed. 
-There are three types of execution context in JavaScript: global, function, and eval. 
+There are `3` types of execution context in JavaScript: global, function, and eval. 
 Each execution context has a `scope chain` and a `this` value.
 
-It consists of two parts: the `lexical environment` and the `variable environment`.
+It consists of `2` parts: the `lexical environment` and the `variable environment`.
 
 The lexical environment is a specification term that refers to the environment in which the code is written. It includes all the variables and functions that are in scope at the point where the code is written, and it is determined by the lexical structure of the code.
 
