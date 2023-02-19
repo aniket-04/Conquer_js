@@ -75,6 +75,17 @@ The variable environment, on the other hand, is a specification term that refers
 
 When a piece of code is executed, it is executed within a specific execution context. The execution context provides a way for the JavaScript engine to keep track of the state of the code and to determine how the code should be executed. Each execution context has its own set of variables and functions that are in scope at the point where the code is executed.
 
-JavaScript uses a stack to manage execution contexts. When a function is called, a new execution context is created and pushed onto the top of the stack. When the function returns, the execution context is popped off the stack, and the control is returned to the calling function.
+JavaScript uses a `stack` to manage execution contexts. When a function is called, a new execution context is created and pushed onto the top of the stack. When the function returns, the execution context is popped off the stack, and the control is returned to the calling function.
 
 In summary, an execution context is an abstract concept that describes the environment in which the code is executed. It includes the lexical environment and the variable environment, and it is managed using a stack. Understanding execution contexts is important for understanding how JavaScript code is executed and how variables and functions are scoped in JavaScript.
+
+* Here's an example to understand execution context with a real-life scenario:
+
+Imagine you are attending a lecture in a classroom. The classroom is the execution context where the lecture takes place. The classroom has a set of variables like the chairs, tables, whiteboard, projector, etc., that are required for the lecture to take place. These variables can be compared to the variables and objects that exist in the execution context of a code.
+
+Now, the lecturer enters the classroom and starts the lecture. The lecturer can be compared to the code that is executed in the execution context. As the lecture progresses, the lecturer uses the variables in the classroom to explain the concepts. These variables can be compared to the variables and objects that are used by the code in the execution context.
+
+Similarly, the lecture has its own set of rules and instructions, such as the syllabus, the topics to be covered, the time allotted for each topic, etc. These rules and instructions can be compared to the rules and instructions that are defined in the code and need to be executed in the execution context.
+
+So, in this way, we can understand execution context as an environment where the code is executed, just like a classroom is an environment where a lecture takes place.
+
