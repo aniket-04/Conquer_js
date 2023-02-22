@@ -89,3 +89,36 @@ Similarly, the lecture has its own set of rules and instructions, such as the sy
 
 So, in this way, we can understand execution context as an environment where the code is executed, just like a classroom is an environment where a lecture takes place.
 
+
+## Stack and Heap Memory in JS
+
+Stack
+- All Primitive data types uses Stack memory. 
+- We get copy of a variable which we declare.
+
+Heap
+- All Non-Primitive data types uses Stack memory. 
+- We get reference of a variable which we declare.
+- Mutate the original variable.
+
+```
+//primitive data type
+
+let a= 7
+let b = 'hello'
+```
+```
+//non-primitive data type
+
+const arr= [1,2,3]
+	
+let con = {
+  a:'al'
+  }
+  
+let noc = con
+  
+const fun = () => {
+  console.log('hello')
+	}
+```
