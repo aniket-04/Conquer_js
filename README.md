@@ -123,4 +123,4 @@ const fun = () => {
 }
 ```
 
-[Image](https://imgur.com/va2u45n)
+[image] (https://imgur.com/a/IzPisF5)
