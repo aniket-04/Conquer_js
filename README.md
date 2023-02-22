@@ -122,4 +122,5 @@ const fun = () => {
   console.log('hello')
 }
 ```
-Output: (https://imgur.com/a/IzPisF5)
+
+![Stack](https://imgur.com/a/IzPisF5.png)
