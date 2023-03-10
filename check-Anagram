@@ -1,0 +1,32 @@
+const str1 = 'Help'
+const str2 = 'pelh'
+
+function check(str1, str2) {
+
+  /*check length */
+  if (str1.length !== str2.length) return false
+
+  const arrStr = str1.toLowerCase().split('')
+  const arrStr2 = str2.toLowerCase().split('')
+
+  const map1 = arrStr.reduce((acc, el) => {
+    acc[el] = acc[el] ? acc[el] + 1 : 1
+    return acc
+  }, {})
+
+  //console.log(map1)
+
+  const map2 = arrStr2.reduce((acc, el) => {
+    acc[el] = (acc[el] || 0) + 1
+    return acc
+  }, {})
+
+  //console.log(map2)
+
+  for (let char in map2) {
+    if (map2[char] !== map1[char]) return false
+  }
+  return true
+}
+
+console.log(check(str1, str2))
