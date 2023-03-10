@@ -1,6 +1,19 @@
 const str1 = 'Help'
 const str2 = 'pelh'
 
+/* 1st approach */
+
+  // Sort the characters of both strings
+  
+       str1 = str1.split('').sort().join('');
+       str2 = str2.split('').sort().join('');
+
+  // Compare the sorted strings 
+          str1 === str2
+  
+
+/* 2nd approach */
+
 function check(str1, str2) {
 
   /*check length */
